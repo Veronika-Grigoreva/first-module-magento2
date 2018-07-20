@@ -1,0 +1,20 @@
+<form class="add-form" id="form-add" method="post" enctype="multipart/form-data">
+    <div class="blocks-promo">
+        <input class="text-search" id="sku-input" type="text" name="skuInput" placeholder="Search..." autocomplete="off" list="search-result">
+        <input type="file" name="csvInput" id="csv-input">
+        <datalist id="search-result"></datalist>
+        <p class="block-promo home-main" style="text-align: center">
+            <input class="action more title button sub" style="margin-top: 10px" type="submit" value="Add to cart" name="Add">
+        </p>
+    </div>
+</form>
+<script type="text/x-magento-init">
+        {
+            "*": {
+                "First_Module/js/addajax": {}
+            },
+            "#sku-input": {
+                "First_Module/js/search": {}
+            }
+        }
+</script>
